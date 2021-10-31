@@ -1,0 +1,143 @@
+interface I1
+{
+	void creatConnection();
+	void getConnection();
+	void closeConnection();
+}
+interface I2 extends I1
+{
+	void read();
+}
+interface I3 extends I1, I2
+{
+	void fun();
+}
+
+class C1 implements I1
+{
+	public void creatConnection()
+	{
+		System.out.println("Inside creatConnection");
+	}
+	public void getConnection()
+	{
+		System.out.println("Inside getConnection");
+	}
+	public void closeConnection()
+	{
+		System.out.println("Inside closeConnection");
+	}
+	public void tp()
+	{
+		System.out.println("Inside tp");
+	}
+}
+
+class C3 implements I2
+{
+	public void creatConnection()
+	{
+		System.out.println("Inside creatConnection");
+	}
+	public void getConnection()
+	{
+		System.out.println("Inside getConnection");
+	}
+	public void closeConnection()
+	{
+		System.out.println("Inside closeConnection");
+	}
+	public void read()
+	{
+		System.out.println("Inside read");
+	}
+	public void tp2()
+	{
+		System.out.println("Inside tp2");
+	}
+}
+
+class C4 implements I3
+{
+	public void creatConnection()
+	{
+		System.out.println("Inside creatConnection");
+	}
+	public void getConnection()
+	{
+		System.out.println("Inside getConnection");
+	}
+	public void closeConnection()
+	{
+		System.out.println("Inside closeConnection");
+	}
+	public void read()
+	{
+		System.out.println("Inside read");
+	}
+	public void fun()
+	{
+		System.out.println("Inside fun");
+	}
+	public void tp3()
+	{
+		System.out.println("Inside tp3");
+	}
+}
+
+class C2 extends C1
+{ 
+	public void tp1()
+	{
+		System.out.println("Inside tp1");
+	}
+}
+
+class C5 extends C3
+{
+	public void tp3()
+	{
+		System.out.println("Inside tp3");
+	}
+}
+
+class C6 extends C4
+{
+	
+	public void fun1()
+	{
+		System.out.println("Inside fun1");
+	}
+}
+
+class InterfaceDemo
+{
+	public static void main(String args[])
+	{
+		/* C1 c=new C1();
+		c.creatConnection();
+		c.getConnection();
+		c.read();
+		c.closeConnection(); */
+		//C1 c1=new C2();
+		//((C2)c1).tp1();
+		
+		
+		C1 c1=new C2();
+		c1.creatConnection();
+		c1.getConnection();
+		c1.closeConnection();
+		c1.tp();
+		((C2)c1).tp1();
+		
+		C3 c2=new C5();
+		c2.read();
+		c2.tp2();
+		((C5)c2).tp3();
+		
+		C4 c3=new C6();
+		c3.fun();
+		c3.tp3();
+		((C6)c3).fun1();
+	}
+}
