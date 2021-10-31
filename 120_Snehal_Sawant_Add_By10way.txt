@@ -1,0 +1,121 @@
+import java.util.*;
+class Add
+{
+public static void main(String args[])
+{
+	Scanner ss= new Scanner(System.in);
+	
+/* Method : 1
+---------------------------
+int a=10;
+int b=15;
+int sum=a+b;
+System.out.println("sum is : "+sum);  */
+
+
+/* Method : 2
+--------------------------- 
+int a=10;
+int b=15;
+System.out.println("sum is : "+(a+b));  */
+
+
+/* Method : 3
+--------------------------- 
+System.out.println("sum is : "+(10+15));  */
+
+
+/* Method : 4
+---------------------------  
+System.out.println("Enter 1st Number : ");
+int a=ss.nextInt();
+System.out.println("Enter 2nd Number : ");
+int b=ss.nextInt();
+int sum=a+b;
+System.out.println("sum is : "+sum);   */
+
+
+/* Method : 5
+---------------------------      
+System.out.println("Enter 1st Number : ");
+int a=ss.nextInt();
+System.out.println("Enter 2nd Number : ");
+int b=ss.nextInt();
+System.out.println("sum is : "+(a+b));    */
+
+
+/* Method : 6
+---------------------------     
+System.out.println("Enter 1st Number : ");
+int a=ss.nextInt();
+System.out.println("Enter 2nd Number : ");
+int b=ss.nextInt();
+int sum= Addition(a,b);
+System.out.println("sum is : "+sum);   
+}
+
+static int Addition(int a, int b)
+{
+	int sum=a+b;
+	return sum;
+}
+*/
+
+
+/* Method : 7
+---------------------------       
+System.out.println("Enter 1st Number : ");
+int a=ss.nextInt();
+System.out.println("Enter 2nd Number : ");
+int b=ss.nextInt();
+Add a1=new Add();
+a1.Display(a,b);
+}
+
+void Display(int a, int b)
+{
+	int sum=a+b;
+	System.out.println("sum is : "+sum);     */
+
+
+
+/* Method : 8
+---------------------------                
+Add a1=new Add();
+a1.Display(10,15);
+}
+
+void Display(int a, int b)
+{
+	int sum=a+b;
+	System.out.println("sum is : "+sum);    */
+
+
+
+/* Method : 9
+---------------------------  
+int a=10, b=15;
+int sum=Integer.sum(a,b);
+System.out.println("sum is : "+sum);      */
+
+
+
+/* Method : 10
+---------------------------  */
+System.out.println("Enter 1st Number : ");
+int a=ss.nextInt();
+System.out.println("Enter 2nd Number : ");
+int b=ss.nextInt();
+Addition a1=new Addition(a,b);
+System.out.println("sum is : "+a1.sum); 
+}
+}
+
+class Addition
+{
+	int sum=0;
+	Addition(int a, int b)
+	{
+	sum=a+b;
+	}
+}
