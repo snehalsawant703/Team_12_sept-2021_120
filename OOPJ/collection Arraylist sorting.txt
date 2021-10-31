@@ -1,0 +1,84 @@
+import java.util.*;
+class Student
+{
+	int roll;
+	int marks;
+	int age;
+	
+	Student()
+	{
+	}
+	
+	Student(int roll, int marks, int age)
+	{
+		this.roll =roll;
+		this.marks=marks;
+		this.age=age;
+	}
+	
+	public String toString()
+	{
+		// Student roll no roll, marks marks, age is age
+		String str = "Student roll no is : "+roll+"marks are : "+marks+"age is : "+age;
+		return str;
+	}
+}
+
+class RollCompare implements Comparator<Student>
+{
+	public int compare(Student s1, Student s2)
+	{
+		return(s1.roll-s2.roll);
+	}
+	
+} 
+class AgeCompare implements Comparator<Student>
+{
+	public int compare(Student s1, Student s2)
+	{
+		return (s1.age-s2.age);
+	}
+}
+class MarkCompare implements Comparator<Student>
+{
+	public int compare(Student s1, Student s2)
+	{
+		return(s1.marks-s2.marks);
+	}
+}
+
+class ArrayListSortPractice
+{
+	static void display(Collection<?> c)
+	{
+		if(c==null) return;
+		for(Object obj : c)
+		{
+			System.out.println(obj);
+		}
+	}
+	public static void main(String args[])
+	{
+		List<Student> list1= new ArrayList<Student>();
+		
+		list1.add(new Student(1,55,20));
+		list1.add(new Student(2,75,25));
+		list1.add(new Student(3,47,22));
+		list1.add(new Student(4,99,18));
+		list1.add(new Student(5,87,23));
+		
+		display(list1);
+		
+		RollCompare rollComp = new RollCompare();
+		Collections.sort(list1,rollComp);
+		display(list1); 
+		
+		AgeCompare ageComp = new AgeCompare();
+		Collections.sort(list1,ageComp);
+		display(list1);
+		
+		MarkCompare markComp=new MarkCompare();
+		Collections.sort(list1,markComp);
+		display(list1);
+	}
+}
