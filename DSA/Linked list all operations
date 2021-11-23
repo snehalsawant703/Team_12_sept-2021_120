@@ -1,0 +1,186 @@
+//Linked list all operations
+class Linkedlist1
+{
+	Node head;
+	
+	static class Node
+	{
+		int data;
+		Node next;
+		
+		Node(int d)
+		{
+			data = d;
+			next=null;
+		}
+	}
+	
+	public void insert(int new_data)  //insert at 1st position
+	{
+		Node new_node=new Node(new_data);
+		new_node.next=head;
+		head=new_node;	
+	}
+	
+	public void append(int new_data)  // insert at last
+	{
+		Node new_node=new Node(new_data);
+		if(head == null)
+		{
+			head=new Node(new_data);
+			return;
+		}
+		Node last=head;
+		while(last.next!= null)
+		{
+			last=last.next;
+		}
+		last.next=new_node;
+		return;
+	}
+	
+	public void addbetween(Node prev_node, int new_data)  // insert inbetween
+	{
+		while(prev_node == null)
+		{
+			System.out.println("The given previous node is null");
+			return;
+		}
+		Node new_node=new Node(new_data);
+		new_node.next=prev_node.next;
+		prev_node.next=new_node;
+	} 
+	
+	public void deleteNode(int position)    //delete any node
+	{
+		if(head == null)
+			return;
+		if(position == 0)          
+		{
+			head=head.next;
+			return;
+		}
+		Node temp = head;
+		for(int i=0;i<position-1 && temp != null; i++)
+			temp=temp.next;
+		if(temp == null && temp.next == null)
+			return;
+		temp.next=temp.next.next;
+	}
+	
+	public void delete()         //delete full linked list
+	{
+		head=null;
+		System.out.println("deleted");
+	}
+	
+	public void countNode()  // count nodes using iteration
+	{
+		Node c = head;
+		int count=0;
+		while(c != null)
+		{
+			count++;
+			c=c.next;
+		}
+	    System.out.println(count);
+	}
+	
+	public int countrec(Node n)   // count nodes using recursion
+	{ 
+		if(n == null)
+			return 0;
+		return 1 + countrec(n.next);
+	}
+	
+	public void search(int key)    // searching element
+	{
+		Node n=head;
+		while(n != null)
+		{
+			if(n.data== key)
+			{
+				System.out.println(key + "found");
+				return;
+			}
+			n=n.next;
+		}
+		System.out.println(key + "not found");
+	}
+	
+	public void mid()   //to find mid of dyanmic list
+	{
+		Node n=head;
+		Node p=head;
+		Node d=null;
+		int count=0;
+		while(n != null && n.next != null)
+		{
+			count++;
+			d=p;
+			n=n.next.next;
+			p=p.next;
+		}
+		if(count%2==0)
+			System.out.println(d.data);
+		else
+			System.out.println(p.data);
+	}
+	
+    public void reverseLinkedList() 	// Revere the linked List
+	{
+        Node current = head;
+        Node previous = null;
+        Node nxt = null;
+        while (current != null) {
+            nxt = current.next;
+            current.next = previous;
+            previous = current;
+            current = nxt;
+        }
+        head = previous;
+    }
+	
+	public void display()
+	{
+		Node n = head;
+		while(n != null)
+		{
+			System.out.print(n.data+"-->");
+			n=n.next;
+		}
+		System.out.print("#");
+	}
+	
+	public static void main(String args[])
+	{
+		Linkedlist1 l1 = new Linkedlist1();
+		
+		l1.head=new Node(10);
+		Node second=new Node(11);
+		Node third=new Node(22);
+		Node four=new Node(33);
+		Node abc= null;   //throws
+		l1.head.next=second;
+		second.next=third;
+		third.next=four;
+		
+		l1.insert(55);
+		l1.insert(44);
+		l1.append(66);
+		l1.addbetween(l1.head, 12);
+		//l1.addbetween(l1.head.next.next, 15);
+		l1.addbetween(second, 15);
+		l1.addbetween(abc,25);
+		l1.append(20);
+		l1.deleteNode(2);
+		l1.delete();
+		l1.display();
+		l1.countNode();
+		System.out.println("count using recursion");
+		System.out.println(l1.countrec(l1.head));
+		l1.search(54);
+		l1.mid();
+		l1.reverseLinkedList();
+	}
+}
