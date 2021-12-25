@@ -1,0 +1,51 @@
+button
+{
+    background-color: red;
+    width: 100%;
+    color: orange;
+    padding: 15px;
+    margin: 10px;
+    border: none;    
+}
+
+form
+{
+    border: 3px solid #f1f1f1; 
+    width: 350px;
+    margin-top: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+
+}
+    
+input[type=text], input[type=password] 
+{
+    width: 100%;
+    margin: 8px;
+    padding: 12px 20px;
+   
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+    
+.container
+{
+    padding: 20px;
+    background-color: rgba(0,0,0,.75);
+    width: 314px;height: 500px;
+    margin-left: 475px;
+    margin-top: 0px;
+}
+
+.logo
+{
+color: red; 
+font-weight: 800; 
+font-size: 1cm;
+margin-top: 5;
+margin-left: 0.5cm;
+margin-top: 0.5cm;
+height: 0cm;
+}
