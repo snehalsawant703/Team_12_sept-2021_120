@@ -1,0 +1,20 @@
+<button onclick="showContent()">click</button>
+
+<template>
+  <h3>click to view detail images of 1. Panipuri 2.Dabeli 3.Dahipuri</h3>
+  <img src="food.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Panipuri" href="panipuri.jpg">
+    <area shape="rect" coords="290,172,333,250" alt="Dabeli" href="Dabeli.jpeg">
+    <area shape="circle" coords="337,300,44" alt="Dahipuri" href="Dahipuri.jpeg">
+  </map>
+</template>
+
+<script>
+  function showContent() {
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+  }
+</script>

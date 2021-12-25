@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<a href="https://www.linkedin.com/in/snehal-sawant-448491146"> LinkedIn Profile </a>
+
+<button onclick="window.location.href='/page2'">Continue</button>
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="food.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+  <map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Panipuri" href="panipuri.jpg">
+  <area shape="rect" coords="290,172,333,250" alt="Dabeli" href="Dabeli.jpeg">
+  <area shape="circle" coords="337,300,44" alt="Dahipuri" href="Dahipuri.jpeg">
+</map>
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
