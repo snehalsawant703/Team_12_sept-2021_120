@@ -1,0 +1,131 @@
+/********Navigation bar********/
+
+.parent1{ /* Navigation bar*/
+    background:rgb(24, 112, 134);
+    border-radius: 20px;
+    color: white;
+    font-size: 40px;
+    
+    display: flex;
+    flex : 1;
+    flex-wrap: wrap;
+   }
+   .spinchild{ /* space between two words */
+       margin-left: 30px;
+       margin-right: 30px;
+   }
+   .colorlink{ /* colors for navigation */
+      color: white;
+   }
+   .child1{ /* navigation home n arogyaa*/
+       flex: 1;
+       display: flex;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+   }
+   .child2{ /* navigation signup and login */
+       flex: 1;
+       display: flex;
+       justify-content: flex-end;
+       flex-wrap: wrap;
+   }
+   .a:hover   /* to set the effect of on click for tab*/
+   {
+     background-color: rgba(243, 57, 73, 0.6);
+   }
+   .parent1:hover   /* to set the effect of on click for tab*/
+   {
+     background-color: rgba(27, 27, 27, 0.8);
+   }
+
+ /******* 2nd phase of page ********/
+
+.middle { /* 2nd phase of page  background image */
+    display: flex;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.075);
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     margin-top: 15px;
+     border-radius: 10px;
+  }
+  
+  .child21 {
+    flex: 1;
+  }
+  .child22 { /* contains on 2nd phase image*/
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* x axis */
+    align-items: left; /*  y axis*/
+    margin: 5%;
+  }
+  .child23 {
+    flex: 1;
+  }
+  .decormain { /* decoration of Arogya*/
+    font-size: 60px;
+    color: rgb(14, 149, 167);
+    font-weight: bolder;
+
+  }
+  .decorcontain {/* contains of 2phase after Arogya*/
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    color: rgb(18, 131, 131);
+    /*text-align: center;*/
+    text-align: left;
+  }
+
+  /********* dr heading *********/
+.single-line{ /* middle line before drs*/ 
+    margin-top: 10px;
+    background-color: rgb(24, 112, 134);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+/********below dr's specialization**********/
+.parent3{ /* 3rd phase */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.child3 { /* 3rd phase dr's background*/
+    width: 250px;
+    margin: 6px;
+    background: rgb(24, 112, 134);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 10px;
+  }
+
+.sec3rdimg{ /* 3rd phase dr's image*/
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.sec3rdchild{ /* 3rd phase contains below the dr's image  */
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+  }
+.head3rd{/* 3rd phase main heading below dr's image*/
+    font-size: 30px;
+}  
+ 

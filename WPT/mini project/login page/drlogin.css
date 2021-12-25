@@ -1,0 +1,94 @@
+/********Navigation bar********/
+
+.parent1{ /* Navigation bar*/
+  background:rgb(24, 112, 134);
+  border-radius: 20px;
+  color: white;
+  font-size: 40px;
+  
+  display: flex;
+  flex : 1;
+  flex-wrap: wrap;
+ }
+ .spinchild{ /* space between two words */
+     margin-left: 30px;
+     margin-right: 30px;
+ }
+ .colorlink{ /* colors for navigation */
+    color: white;
+ }
+ .child1{ /* navigation home n arogyaa*/
+     flex: 1;
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+ }
+ .child2{ /* navigation signup and login */
+     flex: 1;
+     display: flex;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+ }
+ .a:hover   /* to set the effect of on click for tab*/
+ {
+   background-color: rgba(243, 57, 73, 0.6);
+ }
+ .parent1:hover   /* to set the effect of on click for tab*/
+ {
+   background-color: rgba(27, 27, 27, 0.8);
+ }
+ /*********background page for site***************/
+
+.bg   /* for background setting */
+{
+background-image: url(mainbg.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+}
+.parent1
+{
+display: flex;
+}
+.ch12
+{
+  height: 85vh;
+  width: 100wh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button
+{
+background-color:rgb(24, 112, 134);
+width: 95%;
+margin: 10px;
+padding: 15px 25PX;
+border-radius: 0.3cm; 
+font-size: 0.5cm; 
+font-weight: bold;
+}
+input[type=text], input[type=password] 
+{
+width: 95%;
+margin: 8px;
+padding: 12px 20px;
+border: 2px solid green;
+box-sizing: border-box;
+border-radius: 0.3cm; 
+}
+.container
+{
+margin-top: 0.7%;
+align-items: center; 
+background-color: rgba(77, 76, 76, 0.75);
+width: 314px;
+border-radius: 0.3cm;
+border : 5px solid rgba(65, 75, 165, 0.35); 
+}
+.rem
+{
+color: white;
+margin-left:3cm;
+}
+  

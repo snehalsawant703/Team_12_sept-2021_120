@@ -1,0 +1,135 @@
+/********Navigation bar********/
+
+.parent1{ /* Navigation bar*/
+ background:rgb(24, 112, 134);
+ border-radius: 20px;
+ color: white;
+ font-size: 40px;
+ 
+ display: flex;
+ flex : 1;
+ flex-wrap: wrap;
+}
+.spinchild{ /* space between two words */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.colorlink{ /* colors for navigation */
+   color: white;
+}
+.child1{ /* navigation home n arogyaa*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.child2{ /* navigation signup and login */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.a:hover   /* to set the effect of on click for tab*/
+{
+  background-color: rgba(243, 57, 73, 0.6);
+}
+.parent1:hover   /* to set the effect of on click for tab*/
+{
+  background-color: rgba(27, 27, 27, 0.8);
+}
+
+/*********background page for site***************/
+
+.bg   /* for background setting */
+{
+  background-image: url(mainbg.jpg);
+  background-repeat: no-repeat;
+ /*background-size: auto;*/
+ background-size: cover;
+}
+
+/****** space provider ******/
+.space  /*to provide space between divs*/
+{
+  display: flex;
+  flex : 1;
+}
+
+/********* Heading for Doc1 ************/
+.hed  /*  title style   */
+{
+  font-size: 42px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-style: oblique;
+}
+.doc-title  /*  title style   */
+{
+  display: flex;
+  flex : 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  background:rgba(24, 112, 134,0.7);
+  border-radius: 10px;
+  margin: 1%;
+}
+
+/********* Doctors  **********/
+.doc   /* for muliple articles at one time */
+{
+  display: flex;
+  flex : 3;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.doc-body   /* info holder styling */ 
+{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 225, 225,0.4);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin: 1%;
+}
+.doc-img /*image */
+{
+  width: 90%;
+  object-fit: cover;
+  justify-content: right;
+  border-radius: 50px;
+}
+.doc-name    /* content style (name of dr)  */ 
+ {
+  padding: 3px;
+  margin-top: 4%;
+  margin-left: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.doc-content    /* content style   */ 
+ {
+  padding: 3px;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-size: 20px;
+  text-align: left;
+  color:rgb(0, 0, 0);
+}
+
+.doc-contact  /*  style   */ 
+ {
+ flex: 1.5;
+  flex-wrap: wrap;
+  padding: 3px;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-size: 20px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}

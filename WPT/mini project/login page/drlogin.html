@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="drlogin.css">
+</head>
+
+
+<body background="mainbg.jpg">
+    <!-- Navigation -->
+    <div class="parent1">
+        <div class="child1 ">
+            <div>Arogyaa</div>
+            <div class="spinchild colorlink">
+                <a class="colorlink a" href="http://127.0.0.1:5500/login%20page/main.html">Home</a>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="spinchild">
+                <a class="colorlink a" href="http://127.0.0.1:5500/login%20page/drlogin.html">Login</a>
+            </div>
+            <div class="spinchild">
+                <a class="colorlink a" href="http://127.0.0.1:5500/login%20page/signupmain.html"> Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <center>
+            <form style="border:1px solid #ccc">
+                <div class="container">
+
+                    <h1>Login</h1>
+
+                    <p>Please enter details to create an account</p>
+                    <input type="text" placeholder="Enter full name" name="name" required>
+                    <input type="text" placeholder="Mobile Number" name="Mobile Number" required>
+                    <!--<label for="email"><b>Email</b></label>-->
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <!-- <label for="psw"><b>Password</b></label>-->
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <!--<label for="psw-repeat"><b>Repeat Password</b></label>-->
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <label>
+                        <!--   <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me </label>-->
+                        <!--<label for="Mobile Number"><b>Mobile Number</b></label>-->
+
+                        <label for="gender"><b>gender</b></label>
+                        <select name="gender">
+                            <!-- <option value="none" selected>Gender</option> -->
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">other</option>
+                        </select>
+                        <label for="date of birth"><b>DOB</b>
+
+                        </label>
+                        <input type="datetime-local" id="Test_DatetimeLocal">
+                        <button type="submit"><a href="http://127.0.0.1:5500/login%20page/signupmain.html">Login </a>
+
+                        </button>
+            </form>
+        </center>
+
+
+    </div>
+
+
+</body>
+
+
+</html>
