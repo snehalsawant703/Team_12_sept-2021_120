@@ -1,0 +1,39 @@
+html,
+body
+{
+    margin: 0;
+}
+
+div
+{
+    background: linear-gradient(rgb(252, 143, 123), rgb(245, 135, 135),hotpink);
+    height: 200px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+   
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.img
+{
+    height: 120px;
+    width: 100px;
+    outline-color: blue;
+}
+
+.sec1
+{
+    background-color: royalblue;
+    margin: 0.2cm;
+}
+
+.sec2
+{
+    background-color: cyan;
+    margin: 0.2cm;
+}
