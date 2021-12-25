@@ -1,0 +1,19 @@
+h1
+{
+color: tomato;
+background-color: rgb(161, 178, 231);
+padding: 2px;
+}
+
+#id1
+{
+    background: rgb(190, 140, 236);
+}
+
+.p1
+{
+background: lightcyan;
+  padding: 16px;
+  font-size: large;
+  font-style: italic;
+}
